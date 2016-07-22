@@ -1,0 +1,15 @@
+DEPENDENCIES
+  greeting
+    path: site-cookbooks/greeting
+  my_cookbook
+    path: site-cookbooks/my_cookbook
+  my_ntp
+    path: site-cookbooks/my_ntp
+  ntp
+
+GRAPH
+  greeting (0.1.0)
+  my_cookbook (0.1.0)
+  my_ntp (0.1.0)
+    ntp (>= 0.0.0)
+  ntp (1.8.6)
